@@ -1,0 +1,75 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+<!--
+*******************************************************************************
+    Tooltip bordered frame
+*******************************************************************************
+-->
+<Frame name="TooltipBorderedFrameTemplate2" virtual="true">
+  <Layers>
+    <Layer level="BACKGROUND">
+      <Texture name="$parent.BorderTopLeft" parentKey="BorderTopLeft" file="Interface\AddOns\LootHistory\compat\Interface\Tooltips\UI-Tooltip-TL">
+        <Size x="8" y="8"/>
+        <Anchors>
+          <Anchor point="TOPLEFT"/>
+        </Anchors>
+      </Texture>
+      <Texture name="$parent.BorderTopRight" parentKey="BorderTopRight" file="Interface\AddOns\LootHistory\compat\Interface\Tooltips\UI-Tooltip-TR">
+        <Size x="8" y="8"/>
+        <Anchors>
+          <Anchor point="TOPRIGHT"/>
+        </Anchors>
+      </Texture>
+      <Texture name="$parent.BorderBottomRight" parentKey="BorderBottomRight" file="Interface\AddOns\LootHistory\compat\Interface\Tooltips\UI-Tooltip-BR">
+        <Size x="8" y="8"/>
+        <Anchors>
+          <Anchor point="BOTTOMRIGHT"/>
+        </Anchors>
+      </Texture>
+      <Texture name="$parent.BorderBottomLeft" parentKey="BorderBottomLeft" file="Interface\AddOns\LootHistory\compat\Interface\Tooltips\UI-Tooltip-BL">
+        <Size x="8" y="8"/>
+        <Anchors>
+          <Anchor point="BOTTOMLEFT"/>
+        </Anchors>
+      </Texture>
+      <Texture name="$parent.BorderTop" parentKey="BorderTop" file="Interface\AddOns\LootHistory\compat\Interface\Tooltips\UI-Tooltip-T">
+        <Size x="8" y="8"/>
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parent.BorderTopLeft" relativePoint="TOPRIGHT"/>
+          <Anchor point="TOPRIGHT" relativeTo="$parent.BorderTopRight" relativePoint="TOPLEFT"/>
+        </Anchors>
+      </Texture>
+      <Texture name="$parent.BorderRight" parentKey="BorderRight" file="Interface\AddOns\LootHistory\compat\Interface\Tooltips\UI-Tooltip-R">
+        <Size x="8" y="8"/>
+        <Anchors>
+          <Anchor point="TOPRIGHT" relativeTo="$parent.BorderTopRight" relativePoint="BOTTOMRIGHT"/>
+          <Anchor point="BOTTOMRIGHT" relativeTo="$parent.BorderBottomRight" relativePoint="TOPRIGHT"/>
+        </Anchors>
+      </Texture>
+      <Texture name="$parent.BorderBottom" parentKey="BorderBottom" file="Interface\AddOns\LootHistory\compat\Interface\Tooltips\UI-Tooltip-B">
+        <Size x="8" y="8"/>
+        <Anchors>
+          <Anchor point="BOTTOMLEFT" relativeTo="$parent.BorderBottomLeft" relativePoint="BOTTOMRIGHT"/>
+          <Anchor point="BOTTOMRIGHT" relativeTo="$parent.BorderBottomRight" relativePoint="BOTTOMLEFT"/>
+        </Anchors>
+      </Texture>
+      <Texture name="$parent.BorderLeft" parentKey="BorderLeft" file="Interface\AddOns\LootHistory\compat\Interface\Tooltips\UI-Tooltip-L">
+        <Size x="8" y="8"/>
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parent.BorderTopLeft" relativePoint="BOTTOMLEFT"/>
+          <Anchor point="BOTTOMLEFT" relativeTo="$parent.BorderBottomLeft" relativePoint="TOPLEFT"/>
+        </Anchors>
+      </Texture>
+      <Texture name="$parent.Background" parentKey="Background">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parent.BorderTopLeft" relativePoint="BOTTOMRIGHT"/>
+          <Anchor point="BOTTOMRIGHT" relativeTo="$parent.BorderBottomRight" relativePoint="TOPLEFT"/>
+        </Anchors>
+        <Color r="0" g="0" b="0" a="0.8"/>
+      </Texture>
+    </Layer>
+  </Layers>
+</Frame>
+
+</Ui>

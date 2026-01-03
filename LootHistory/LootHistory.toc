@@ -1,0 +1,13 @@
+## Interface: 30300
+## Title: !LootHistory [BACKPORT]
+## Version: 1.2
+## Notes: Backport LootHistory feature from WoW 5.4.8
+## Notes-ruRU: Бекпорт функциональности LootHistory с WoW 5.4.8
+## Author: Artur91425
+## SavedVariables: LootHistoryDB
+
+compat\compat.xml
+
+LootHistory.xml
+LootHistory.lua
+core.lua
